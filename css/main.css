@@ -1,0 +1,112 @@
+h1 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	text-align: center;
+	font-family: "Arial Black", Helvetica, sans-serif;
+}
+li {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#refrigerator {
+	display: inline;
+	float: left;
+	border: 2px solid;
+	border-radius: 25px;
+	width: 320px;
+	height: 405px;
+	background: #dddddd;
+	margin-left: 20px;
+}
+#refrigerator div {
+	border: 2px solid;
+	border-radius: 5px;
+	width: 65px;
+	height: 65px;
+	float: left;
+	display: inline;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: -2px;
+	background-color: #ffffff;
+}
+
+.carne {
+	background: url(../images/carne.png) top right no-repeat;
+}
+.leche {
+	background: url(../images/leche.png) top right no-repeat;
+}
+.lechuga {
+	background: url(../images/lechuga.png) top right no-repeat;
+}
+.pasta_fresca {
+	background: url(../images/pasta_fresca.png) top right no-repeat;
+}
+.pescado {
+	background: url(../images/pescado.png) top right no-repeat;
+}
+.pollo {
+	background: url(../images/pollo.png) top right no-repeat;
+}
+.queso {
+	background: url(../images/queso.png) top right no-repeat;
+}
+.salchicha {
+	background: url(../images/salchicha.png) top right no-repeat;
+}
+.zanahoria {
+	background: url(../images/zanahoria.png) top right no-repeat;
+}
+#zona_control {
+	display: inline;
+	float: left;
+	border: 2px solid;
+	border-radius: 25px;
+	--width: 600px;
+	--height: 385px;
+	background: #eeeeee;
+	margin-left: 20px;
+	padding: 10px;
+}
+
+#alimentos {
+	padding: 10px;
+}
+
+#alimentos div {
+	border: 2px solid;
+	border-radius: 5px;
+	width: 65px;
+	height: 65px;
+	float: left;
+	display: inline;
+	background-color: #ffffff;
+}
+
+#ingredientes {
+	display: inline;
+	float: left;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+#recetas {
+	display: inline;
+	float: left;
+	border-radius: 25px;
+	margin-top: 10px;
+}
+#buttons_div {
+	margin-top: 100px;
+	display: inline;
+	float: right;
+}
+#buttons_div button {
+	display: block;
+}
