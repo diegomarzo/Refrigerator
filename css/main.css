@@ -45,8 +45,8 @@ li {
 .lechuga {
 	background: url(../images/lechuga.png) top right no-repeat;
 }
-.pasta_fresca {
-	background: url(../images/pasta_fresca.png) top right no-repeat;
+.pasta {
+	background: url(../images/pasta.png) top right no-repeat;
 }
 .pescado {
 	background: url(../images/pescado.png) top right no-repeat;
@@ -109,4 +109,9 @@ li {
 }
 #buttons_div button {
 	display: block;
+	width: 140px;
+}
+li a {
+	text-decoration: none;
+	color: #000;
 }

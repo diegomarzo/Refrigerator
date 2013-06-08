@@ -9,40 +9,21 @@
 		<h1>UNED - Computación Ubicua</h1>
 		<h2>Por Diego Marzo</h2>
 		<div id="refrigerator">
-			<div class="carne"></div>
-			<div class="leche"></div>
-			<div class="lechuga"></div>
-			<div class="pasta_fresca"></div>
-			<div class="pescado"></div>
-			<div class="pescado"></div>
-			<div class="pollo"></div>
-			<div class="queso"></div>
-			<div class="zanahoria"></div>
-			<div class="carne"></div>
-			<div class="carne"></div>
-			<div class="leche"></div>
-			<div class="lechuga"></div>
-			<div class="pasta_fresca"></div>
-			<div class="pescado"></div>
-			<div class="pescado"></div>
-			<div class="pollo"></div>
-			<div class="queso"></div>
-			<div class="zanahoria"></div>
-			<div class="carne"></div>
+
 		</div>
 		<div id="zona_control">
 			<div id="alimentos">
 				<p>
 					Haga click en los alimentos para añadir
 				</p>
-				<div class="carne"></div>
-				<div class="leche"></div>
-				<div class="lechuga"></div>
-				<div class="pasta_fresca"></div>
-				<div class="pescado"></div>
-				<div class="pollo"></div>
-				<div class="queso"></div>
-				<div class="zanahoria"></div>
+				<div class="carne" onclick="javascript:addAlimento('carne')"></div>
+				<div class="leche" onclick="javascript:addAlimento('leche')"></div>
+				<div class="lechuga" onclick="javascript:addAlimento('lechuga')"></div>
+				<div class="pasta" onclick="javascript:addAlimento('pasta')"></div>
+				<div class="pescado" onclick="javascript:addAlimento('pescado')"></div>
+				<div class="pollo" onclick="javascript:addAlimento('pollo')"></div>
+				<div class="queso" onclick="javascript:addAlimento('queso')"></div>
+				<div class="zanahoria" onclick="javascript:addAlimento('zanahoria')"></div>
 			</div>
 			<div id="recetas">
 				<p>
@@ -50,41 +31,31 @@
 				</p>
 				<ul>
 					<li>
-						Ensalada césar
+						<a href="#" onclick="javascript:seleccionaReceta('cesar')"> Ensalada césar </a>
 					</li>
 					<li>
-						Pescado al horno
+						<a href="#"onclick="javascript:seleccionaReceta('pescado')"> Pescado al horno</a>
 					</li>
 					<li>
-						Rosto
+						<a href="#" onclick="javascript:seleccionaReceta('rosto')"> Rosto</a>
 					</li>
 					<li>
-						Pastel de queso
+						<a href="#" onclick="javascript:seleccionaReceta('pastel')"> Pastel de queso</a>
 					</li>
 				</ul>
 			</div>
 			<div id="ingredientes">
-				<p>
-					Ingredientes:
-				</p>
-				<ul>
-					<li>
-						Carne
-					</li>
-					<li>
-						Queso
-					</li>
-					<li>
-						Lechuga
-					</li>
-				</ul>
+
 			</div>
 			<div id="buttons_div">
-				<button>
-					Preparar receta
+				<button onclick="javascript:vaciarNevera()">
+					Vaciar nevera
 				</button>
-				<button>
+				<button onclick="javascript:listaDeLaCompra()">
 					Lista de la compra
+				</button>
+				<button onclick="javascript:prepararReceta()">
+					Preparar receta
 				</button>
 			</div>
 		</div>
