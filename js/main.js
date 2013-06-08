@@ -85,4 +85,28 @@ function prepararReceta() {
 	}
 }
 
+function compraAutomatica() {
+	var alimentosAComprar = [];
+	for (var receta in ingredientesParaRecetas) {
+		alimentosAComprar = alimentosAComprar.concat(alimentosQueFaltan(ingredientesParaRecetas[receta], alimentos.concat(alimentosAComprar)));
+	}
+	if (alimentosAComprar.length > 0) {
+		alimentos = alimentos.concat(alimentosAComprar);
+		mostrarAlimentos();
+	} else {
+		alert("Pueden hacerse todas las recetas con los alimentos disponibles");
+	}
+}
+
+function buscarReceta() {
+	for (var receta in ingredientesParaRecetas) {
+		var alimentosAComprar = alimentosQueFaltan(ingredientesParaRecetas[receta], alimentos);
+		if (alimentosAComprar.length == 0) {
+			alert("Puede preparar " + receta);
+			return;
+		}
+	}
+	alert("No puede prepararse ninguna receta con los alimentos disponibles");
+}
+
 initIngredientesParaRecetas();
